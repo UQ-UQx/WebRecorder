@@ -14,6 +14,7 @@
 		61E45EA11B3BB3DB000B41BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61E45EA01B3BB3DB000B41BE /* Images.xcassets */; };
 		61E45EA41B3BB3DB000B41BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61E45EA21B3BB3DB000B41BE /* LaunchScreen.xib */; };
 		61E45EB01B3BB3DC000B41BE /* WebRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E45EAF1B3BB3DC000B41BE /* WebRecorderTests.m */; };
+		61E45EBA1B3BBB31000B41BE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E45EB91B3BBB31000B41BE /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		61E45EA91B3BB3DC000B41BE /* WebRecorderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebRecorderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61E45EAE1B3BB3DC000B41BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61E45EAF1B3BB3DC000B41BE /* WebRecorderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebRecorderTests.m; sourceTree = "<group>"; };
+		61E45EB91B3BBB31000B41BE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61E45EBA1B3BBB31000B41BE /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		61E45E871B3BB3DB000B41BE = {
 			isa = PBXGroup;
 			children = (
+				61E45EB91B3BBB31000B41BE /* AVFoundation.framework */,
 				61E45E921B3BB3DB000B41BE /* WebRecorder */,
 				61E45EAC1B3BB3DC000B41BE /* WebRecorderTests */,
 				61E45E911B3BB3DB000B41BE /* Products */,
@@ -168,6 +172,7 @@
 				TargetAttributes = {
 					61E45E8F1B3BB3DB000B41BE = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = X4J3AMW696;
 					};
 					61E45EA81B3BB3DC000B41BE = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -347,9 +352,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WebRecorder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -357,9 +365,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WebRecorder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
