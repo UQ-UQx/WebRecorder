@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>88D7BD3B-3968-4B1D-A29C-78568CCCEDB0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WebRecorder</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B8490D31B5DDCB58B08F44DCDBF63A822093497B</key>
+		<string>https://github.com/UQ-UQx/WebRecorder.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WebRecorder.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B8490D31B5DDCB58B08F44DCDBF63A822093497B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/UQ-UQx/WebRecorder.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B8490D31B5DDCB58B08F44DCDBF63A822093497B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B8490D31B5DDCB58B08F44DCDBF63A822093497B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WebRecorder</string>
+		</dict>
+	</array>
+</dict>
+</plist>

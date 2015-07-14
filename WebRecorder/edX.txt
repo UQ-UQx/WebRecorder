@@ -1,0 +1,132 @@
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<style type='text/css'>
+a.record {
+font-size:300%;
+display:block;
+margin:20px;
+}
+a.recording {
+background-color:red !important;
+}
+div#recorder {
+border:1px solid #222;
+margin:20px;
+border-radius: 5px;
+padding-bottom: 20px;
+}
+div#recorder h2 {
+background:#222;
+color:#eee;
+font-weight:300;
+font-size:140%;
+padding:10px;
+margin:0;
+text-align:center;
+}
+a.play {
+font-size:400%;
+margin-left:20px;
+}
+a.btn {
+background:#eee;
+border:1px solid #bbb;
+border-radius:3px;
+text-align:center;
+padding:0 10px;
+color:#222;
+}
+a.btn-danger {
+background:red;
+color:#fff;
+}
+a.btn-success {
+background:green;
+color:#fff;
+}
+</style>
+
+<div id='recorder'>
+<h2>Audio Recorder</h2>
+<a onclick="toggleRecording(this);" class="fa-microphone fa record btn btn-default"></a>
+<a onclick="togglePlay(this);" class="fa-play fa play btn btn-default"></a>
+</div>
+<script src="https://tools.ceit.uq.edu.au/test/audiotest/recorder.js"></script>
+<script src="https://tools.ceit.uq.edu.au/test/audiotest/jquery.voice.min.js"></script>
+<audio controls src="" id="audio"></audio>
+<script type='text/javascript'>
+var iOS = ( navigator.userAgent.match(/iPad|iPhone|iPod/g) ? true : false );
+function hasGetUserMedia() {
+return !!(navigator.getUserMedia || navigator.webkitGetUserMedia ||
+navigator.mozGetUserMedia || navigator.msGetUserMedia);
+}
+var recorder = null;
+navigator.getUserMedia  = navigator.getUserMedia ||
+navigator.webkitGetUserMedia ||
+navigator.mozGetUserMedia ||
+navigator.msGetUserMedia;
+
+function toggleRecording(obj) {
+if($(obj).hasClass('btn-danger')) {
+$(obj).removeClass('btn-danger');
+stopRecording();
+} else {
+$(obj).addClass('btn-danger');
+startRecording();
+}
+}
+function togglePlay(obj) {
+if($(obj).hasClass('btn-success')) {
+$(obj).removeClass('btn-success');
+pauseRecording();
+} else {
+$(obj).addClass('btn-success');
+playRecording();
+}
+}
+function stopRecording() {
+if(iOS) {
+window.location = 'ios:stopaudiorecording';
+} else {
+Fr.voice.stop();
+}
+console.log("STOP RECORDING");
+}
+function startRecording() {
+if(iOS) {
+window.location = 'ios:startaudiorecording';
+} else {
+Fr.voice.record(false, function(){
+console.log("STARTED");
+});
+}
+console.log("START RECORDING");
+}
+function playRecording() {
+if(iOS) {
+window.location = 'ios:playaudiorecording';
+} else {
+Fr.voice.stop();
+Fr.voice.export(function(url){
+console.log(url);
+$("#audio").attr("src", url);
+$("#audio")[0].play();
+}, "URL");
+}
+console.log("PLAY RECORDING");
+}
+function pauseRecording() {
+if(iOS) {
+window.location = 'ios:pauseaudiorecording';
+} else {
+
+}
+console.log("PAUSE RECORDING");
+}
+function seekRecording() {
+if(iOS) {
+window.location = 'ios:seekaudiorecording';
+} else {
+
+}
+}
+</script>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		616838C61B54BD12007D5ED6 /* edX.txt in Resources */ = {isa = PBXBuildFile; fileRef = 616838C51B54BD12007D5ED6 /* edX.txt */; };
 		61E45E961B3BB3DB000B41BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E45E951B3BB3DB000B41BE /* main.m */; };
 		61E45E991B3BB3DB000B41BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E45E981B3BB3DB000B41BE /* AppDelegate.m */; };
 		61E45E9C1B3BB3DB000B41BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E45E9B1B3BB3DB000B41BE /* ViewController.m */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		616838C51B54BD12007D5ED6 /* edX.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = edX.txt; sourceTree = "<group>"; };
 		61E45E901B3BB3DB000B41BE /* WebRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61E45E941B3BB3DB000B41BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61E45E951B3BB3DB000B41BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				61E45EA01B3BB3DB000B41BE /* Images.xcassets */,
 				61E45EA21B3BB3DB000B41BE /* LaunchScreen.xib */,
 				61E45E931B3BB3DB000B41BE /* Supporting Files */,
+				616838C51B54BD12007D5ED6 /* edX.txt */,
 			);
 			path = WebRecorder;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			files = (
 				61E45E9F1B3BB3DB000B41BE /* Main.storyboard in Resources */,
 				61E45EA41B3BB3DB000B41BE /* LaunchScreen.xib in Resources */,
+				616838C61B54BD12007D5ED6 /* edX.txt in Resources */,
 				61E45EA11B3BB3DB000B41BE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +431,7 @@
 				61E45EB51B3BB3DC000B41BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61E45EB61B3BB3DC000B41BE /* Build configuration list for PBXNativeTarget "WebRecorderTests" */ = {
 			isa = XCConfigurationList;
@@ -435,6 +440,7 @@
 				61E45EB81B3BB3DC000B41BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
