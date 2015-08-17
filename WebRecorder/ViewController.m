@@ -51,7 +51,7 @@
 
 - (void) loadWebsite {
     NSString* url = @"https://tools.ceit.uq.edu.au/test/audiotest/index.html";
-    url = @"https://edge.edx.org/courses/UQx/ceit1001/2014_1/courseware/a3723e6b048a4d2893687fc278abbd56/6df2a4b26e0d43ef8ee1b85fa9435bda/1";
+    url = @"https://edge.edx.org/courses/UQx/ceit1001/2014_1/courseware/a3723e6b048a4d2893687fc278abbd56/6df2a4b26e0d43ef8ee1b85fa9435bda/1?activate_block_id=i4x%3A%2F%2FUQx%2Fceit1001%2Fvertical%2Fdd86de9612694fad9e793f4772783ee3";
     NSURL* nsUrl = [NSURL URLWithString:url];
     NSURLRequest* request = [NSURLRequest requestWithURL:nsUrl cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:3];
     [self.webView loadRequest:request];
